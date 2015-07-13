@@ -14,4 +14,58 @@
  *= require_self
  *= require foundation_and_overrides
 
+
  */
+@font-face {
+  font-family: 'Growl'; /*a name to be used later*/
+  src: url('growl.ttf') format(''); /*URL to font*/
+ }
+
+.feelings_index {
+  font-family: growl;
+}
+
+.levels_index {
+  font-family: growl;
+}
+
+.field {
+  color: white;
+  font-family: growl;
+}
+
+.actions {
+  color: white;
+  font-family: growl;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: Growl;
+   font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.3999996185303px;
+}
+
+.form_errors {
+  color: white;
+  font-family: growl;
+}
+
+.top-bar {
+  /* background-color: #635454; */
+  background-color: #000000;
+  font-family: growl;
+}
+
+.top-bar li {
+  /* background-color: #635454; */
+  background-color: #000000;
+}
+
+li {
+  color: white;
+  font-family: growl;
+}

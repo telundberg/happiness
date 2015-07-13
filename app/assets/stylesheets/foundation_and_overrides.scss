@@ -124,8 +124,8 @@ $include-html-global-classes: $include-html-classes;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+$body-bg: black;
+$body-font-color: white;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -356,6 +356,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control text style.
 // $alert-font-weight: $font-weight-normal;
+$alert-font-family: growl;
 // $alert-font-size: rem-calc(13);
 // $alert-font-color: $white;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
@@ -448,8 +449,8 @@ $include-html-global-classes: $include-html-classes;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
-// $button-font-color: $white;
+$button-font-family: growl;
+$button-font-color: white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -464,7 +465,8 @@ $include-html-global-classes: $include-html-classes;
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+/* $button-bg-color: #c25975; */
+$button-bg-color: #000000;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -1400,7 +1402,8 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+/* $topbar-bg-color: #635454; */
+$topbar-bg-color: #000000;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1410,6 +1413,7 @@ $include-html-global-classes: $include-html-classes;
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
 // $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-family: growl;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;
@@ -1424,13 +1428,14 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
-// $topbar-link-font-family: $body-font-family;
+$topbar-link-font-family: growl;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: rem-calc(18);
 // $topbar-link-dropdown-padding: rem-calc(20);
 // $topbar-button-font-size: .75rem;
 // $topbar-button-top: 7px;
+// $topbar-button-font-family: Anton, cursive;
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
