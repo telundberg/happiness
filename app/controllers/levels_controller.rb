@@ -9,7 +9,7 @@ class LevelsController < ApplicationController
     @level = Level.new(level_params)
 
     if @level.save
-      redirect_to feelings_path
+      redirect_to levels_path
       flash[:notice] = "Level of unhappiness added!"
     else
       render :new

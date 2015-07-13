@@ -5,14 +5,21 @@ feature 'user signs in', %Q{
   I want to record my feelings
   So I quantify my unhappiness
 } do
+
+  # let!(:user) { FactoryGirl.create :user }
+  #
+  # before do
+  #   visit root_path
+  #   sign_in_as user
+  # end
+
   scenario 'user records unhappiness' do
-    user = FactoryGirl.create(:user)
 
-    visit feelings_path
+    visit new_level_path
 
-    fill_in 'unhappiness', with: 5
-    click_button 'record it'
+    select '9', from: 'Amount'
+    click_button 'Add amount'
 
-    expect(page).to have_content('unhappiness recorded')
+    expect(page).to have_content('Level of unhappiness added!')
   end
 end

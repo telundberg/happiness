@@ -30,12 +30,12 @@
 }
 
 .field {
-  color: white;
+  color: yellow;
   font-family: growl;
 }
 
 .actions {
-  color: white;
+  color: yellow;
   font-family: growl;
 }
 
@@ -47,6 +47,8 @@ h1, h2, h3, h4 {
   font-variant: normal;
   font-weight: 500;
   line-height: 26.3999996185303px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 .form_errors {
