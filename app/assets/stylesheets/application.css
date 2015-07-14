@@ -18,7 +18,7 @@
  */
 @font-face {
   font-family: 'Growl'; /*a name to be used later*/
-  src: url('growl.ttf') format(''); /*URL to font*/
+  src: url('growl.ttf') format('truetype'); /*URL to font*/
  }
 
 .feelings_index {
@@ -36,6 +36,11 @@
 
 .actions {
   color: yellow;
+  font-family: growl;
+}
+
+.flash{
+  font-size: 30px;
   font-family: growl;
 }
 

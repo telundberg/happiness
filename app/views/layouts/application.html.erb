@@ -6,7 +6,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
+
   <nav class="top-bar">
     <ul class="title-area">
       <li class="name">
@@ -15,6 +15,10 @@
     </ul>
 
     <section class="top-bar-section">
+      <ul class="center">
+        <li><%= link_to 'See Your Levels', levels_path%></li>
+        <li><%= link_to "Add an amount", new_level_path%></li>
+      </ul>
       <ul class="right">
         <%- if current_user -%>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>

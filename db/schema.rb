@@ -24,8 +24,10 @@ ActiveRecord::Schema.define(version: 20150713163458) do
   end
 
   create_table "levels", force: :cascade do |t|
-    t.integer "amount",  null: false
-    t.integer "user_id"
+    t.integer  "amount",     null: false
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|

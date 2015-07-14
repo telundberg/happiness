@@ -7,19 +7,20 @@
   <!-- <div class="row"> -->
     <!-- <div class="medium-12 medium-centered columns"> -->
       <table>
-        <h3>Your unhappiness <%= current_user%></h3>
+        <h3>Your unhappiness</h3>
         <tr>
           <th>Level</th>
+          <!-- <th>Created At</th> -->
         </tr>
           <% @levels.each do |item| %>
           <tr>
           <td><%= item.amount %></td>
+          <!-- <td><%= item.created_at %></td> -->
           </tr>
         <% end %>
       </table>
     <!-- </div> -->
   <!-- </div> -->
-  <%= link_to "Add an amount", new_level_path, class: "button radius tiny" %>
   <br>
   <%= link_to "Index", feelings_path, class: "button radius tiny" %>
 </div>
