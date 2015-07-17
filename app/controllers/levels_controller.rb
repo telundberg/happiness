@@ -1,15 +1,24 @@
 class LevelsController < ApplicationController
+  # before_filter :format_date_time, :only => [:create]
+
   def index
-    @levels = Level.all
+    @feeling = Feeling.find(params[:feeling_id])
+    @levels = Level.find(params[:feeling_id])
+    # @level = Level.find(params[:feeling_id])
+  end
+  def show
+    @level = Level.find(params[:feeling_id])
   end
   def new
+    @feeling = Feeling.find(params[:feeling_id])
     @level = Level.new
   end
   def create
-    @level = Level.new(level_params)
+    @feeling = Feeling.find(params[:feeling_id])
+    @level = @feeling.levels.new(level_params)
 
     if @level.save
-      redirect_to levels_path
+      redirect_to feeling_path(@feeling)
       flash[:notice] = "Level of unhappiness added!"
     else
       render :new
@@ -21,5 +30,4 @@ class LevelsController < ApplicationController
   def level_params
     params.require(:level).permit(:amount)
   end
-
 end

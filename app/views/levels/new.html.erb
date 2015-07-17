@@ -1,7 +1,7 @@
 <div class="form_container">
   <div class="medium-4 medium-centered columns">
-    <h4>New Level</h4>
-      <%= form_for @level do |f| %>
+    <h4>New Level for <%= @feeling.category %></h4>
+      <%= form_for [@feeling, @level] do |f| %>
 
         <div class="form_errors">
           <% if @level.errors.any? %>

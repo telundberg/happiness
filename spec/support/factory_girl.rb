@@ -7,4 +7,7 @@ FactoryGirl.define do
     password_confirmation 'password'
   end
 
+  factory :review do
+    rating 9
+  end
 end

@@ -1,28 +1,14 @@
 <div class="feelings_index">
-  <!-- <div class="row">
-    <div class="medium-12 medium-centered columns"> -->
-      <h2>Unhappiness</h2>
+  <h4>Unhappiness categories</h4>
 
-        <p>
-          The idea is that the best indicator of wealth and well-being is how happy you are.
-        </p>
-    <!-- </div>
-  </div> -->
+    <div class="row">
+      <div id="category_list" class="medium-12 medium-centered columns">
+          <% @feelings.each do |feeling| %>
+            <div class="categories_result"><%= link_to feeling.category, feeling_path(feeling) %></div>
+            <!-- <div class="categories_result"><%= link_to feeling.category, new_feeling_level_path(feeling) %></div> -->
+          <% end %>
+      </div>
+    </div>
 
-  <!-- <div class="row">
-    <div class="medium-12 medium-centered columns"> -->
-      <!-- <table>
-        <tr>
-          <th>Rating</th>
-        </tr>
-          <% @feelings.each do |item| %>
-          <tr>
-          <td><%= item.level %></td>
-          </tr>
-        <% end %>
-      </table> -->
-    <!-- </div>
-  </div> -->
   <br>
-  <!-- <%= link_to "See your levels", levels_path, class: "button radius tiny" %> -->
 </div>

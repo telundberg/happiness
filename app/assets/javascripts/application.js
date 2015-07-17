@@ -12,7 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+
+//= require jquery.rambling.slider
 //= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(function() {
+  $('#sliderId').ramblingSlider();
+});

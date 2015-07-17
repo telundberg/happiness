@@ -7,15 +7,13 @@
   <!-- <div class="row"> -->
     <!-- <div class="medium-12 medium-centered columns"> -->
       <table>
-        <h3>Your unhappiness</h3>
+        <h3>Unhappiness for <%= @feeling.category %></h3>
         <tr>
           <th>Level</th>
-          <!-- <th>Created At</th> -->
         </tr>
-          <% @levels.each do |item| %>
+          <% [@levels].each do |level| %>
           <tr>
-          <td><%= item.amount %></td>
-          <!-- <td><%= item.created_at %></td> -->
+          <td><%= level.amount %></td>
           </tr>
         <% end %>
       </table>

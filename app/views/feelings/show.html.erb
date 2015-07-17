@@ -1,0 +1,19 @@
+<!-- <div id="slider"> -->
+  <div class="feelings_details">
+
+    <table>
+      <h3>Unhappiness for <%= @feeling.category %></h3>
+      <tr>
+        <th>Level</th>
+        <th>Created At</th>
+      </tr>
+        <% @levels.each do |level| %>
+        <tr>
+        <td><%= level.amount %></td>
+        <td><%= level.created_at %></td>
+        </tr>
+      <% end %>
+    </table>
+    <%= link_to "New Level", new_feeling_level_path(@feeling) %>
+  </div>
+<!-- </div> -->

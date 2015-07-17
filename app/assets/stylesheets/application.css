@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
-
+ *= require jquery.rambling.slider
 
  */
 @font-face {
@@ -22,6 +22,17 @@
  }
 
 .feelings_index {
+  color: white;
+  font-family: growl;
+}
+
+.feelings_details {
+  color: white;
+  font-family: growl;
+}
+
+.category_index {
+  color: white;
   font-family: growl;
 }
 
@@ -75,4 +86,8 @@ h1, h2, h3, h4 {
 li {
   color: white;
   font-family: growl;
+}
+
+table {
+  /* margin-left: 12px; */
 }

@@ -1,5 +1,5 @@
 class Feeling < ActiveRecord::Base
-  has_many :users
+  belongs_to :user
   has_many :levels
 
   validates :level, presence: true
