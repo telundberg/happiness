@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
 
   helper_method :format_date_time
 
-
   # def format_date_time(time)
   #   datetime = params[:datetime]
   #   params[:datetime] = DateTime.strptime(datetime, pref_date_time_format).strftime('%c')

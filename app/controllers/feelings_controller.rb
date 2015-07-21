@@ -1,6 +1,8 @@
 class FeelingsController < ApplicationController
   def index
     @feelings = Feeling.all
+    @database = Quandl::Dataset.get('WIKI/AAPL')
+    binding.pry
     # @feeling = Feeling.find(params[:id])
     # @levels = @feeling.levels
   end
@@ -8,7 +10,7 @@ class FeelingsController < ApplicationController
   def show
     @feeling = Feeling.find(params[:id])
     @levels = @feeling.levels
-  
+
     # @species = Species.find(params[:id])
     # @reviews = @species.reviews.order(net_upvote: :desc).page params[:page]
 
