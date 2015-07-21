@@ -21,6 +21,10 @@
   src: url('growl.ttf') format('truetype'); /*URL to font*/
  }
 
+.feelings_chart {
+  color: black;
+}
+
 .feelings_index {
   color: white;
   font-family: growl;

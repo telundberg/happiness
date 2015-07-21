@@ -37,6 +37,7 @@
   <%= yield %>
 
   <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag "http://www.google.com/jsapi", "chartkick" %>
   <%= yield :extra_footer %>
 </body>
 </html>

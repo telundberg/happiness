@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= require highcharts.js
+//= require chartkick
 //= require jquery.rambling.slider
 //= require foundation
 //= require_tree .
@@ -22,3 +23,8 @@ $(function(){ $(document).foundation(); });
 $(function() {
   $('#sliderId').ramblingSlider();
 });
+
+//Function To Display Popup
+function div_show() {
+document.getElementById('abc').style.display = "block";
+}

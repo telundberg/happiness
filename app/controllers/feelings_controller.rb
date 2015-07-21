@@ -1,11 +1,14 @@
 class FeelingsController < ApplicationController
   def index
     @feelings = Feeling.all
+    # @feeling = Feeling.find(params[:id])
+    # @levels = @feeling.levels
   end
 
   def show
     @feeling = Feeling.find(params[:id])
     @levels = @feeling.levels
+  
     # @species = Species.find(params[:id])
     # @reviews = @species.reviews.order(net_upvote: :desc).page params[:page]
 

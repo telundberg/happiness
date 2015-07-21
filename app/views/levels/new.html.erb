@@ -1,6 +1,7 @@
 <div class="form_container">
   <div class="medium-4 medium-centered columns">
     <h4>New Level for <%= @feeling.category %></h4>
+    <button id="popup" onclick="div_show()">
       <%= form_for [@feeling, @level] do |f| %>
 
         <div class="form_errors">
@@ -21,6 +22,8 @@
         <%= f.select :amount, options_for_select(10.downto(1)), id: " "%>
         <%= f.submit "Add amount", class: "button radius small"%>
       <%end%>
+    </button>
+      <!-- <button id="popup" onclick="div_show()">Popup</button> -->
 
     <%= link_to "Back to Index", feelings_path, class: "button radius small"%>
   </div>
