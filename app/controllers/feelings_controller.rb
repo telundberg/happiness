@@ -7,6 +7,8 @@ class FeelingsController < ApplicationController
 
   def show
     @feeling = Feeling.find(params[:id])
+    @feelings = Feeling.all
+    @all_levels = Level.all
     @levels = @feeling.levels
 
     # @species = Species.find(params[:id])

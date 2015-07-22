@@ -1,14 +1,14 @@
 class LevelsController < ApplicationController
   # before_filter :format_date_time, :only => [:create]
 
-  def index
-    @feeling = Feeling.find(params[:feeling_id])
-    @levels = Level.find(params[:feeling_id])
-    # @level = Level.find(params[:feeling_id])
-  end
-  def show
-    @level = Level.find(params[:feeling_id])
-  end
+  # def index
+  #   @feeling = Feeling.find(params[:feeling_id])
+  #   @levels = Level.find(params[:feeling_id])
+  #   # @level = Level.find(params[:feeling_id])
+  # end
+  # def show
+  #   @level = Level.find(params[:feeling_id])
+  # end
   def new
     @feeling = Feeling.find(params[:feeling_id])
     @level = Level.new
