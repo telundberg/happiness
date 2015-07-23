@@ -7,15 +7,17 @@ feature 'user signs in', %Q{
 } do
 
   # let!(:user) { FactoryGirl.create :user }
-  #
+
+  # let!(:feeling) { FactoryGirl.create :feeling }
+
   # before do
   #   visit root_path
-  #   sign_in_as user
   # end
 
   scenario 'user records unhappiness' do
 
-    visit new_level_path
+    # visit new_feeling_level_path(feeling)
+    visit new_feeling_level_path(8)
 
     select '9', from: 'Amount'
     click_button 'Add amount'

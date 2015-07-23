@@ -21,22 +21,26 @@
   src: url('growl.ttf') format('truetype'); /*URL to font*/
  }
 
+#category_list {
+  text-align: center;
+}
+
 .feelings_chart {
   color: black;
 }
 
 .feelings_index {
-  color: white;
+  color: black;
   font-family: growl;
 }
 
 .feelings_details {
-  color: white;
+  color: black;
   font-family: growl;
 }
 
 .category_index {
-  color: white;
+  color: black;
   font-family: growl;
 }
 
@@ -55,12 +59,14 @@
 }
 
 .flash{
+  text-align: center;
   font-size: 30px;
   font-family: growl;
 }
 
 h1, h2, h3, h4 {
-  color: white;
+  text-align: center;
+  color: black;
   font-family: Growl;
    font-size: 40px;
   font-style: normal;
@@ -72,23 +78,24 @@ h1, h2, h3, h4 {
 }
 
 .form_errors {
-  color: white;
+  color: black;
   font-family: growl;
 }
 
 .top-bar {
   /* background-color: #635454; */
-  background-color: #000000;
+  background-color: black;
   font-family: growl;
 }
 
 .top-bar li {
   /* background-color: #635454; */
-  background-color: #000000;
+  background-color: black;
 }
 
 li {
-  color: white;
+  text-align: center;
+  color: black;
   font-family: growl;
 }
 

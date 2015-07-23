@@ -45,6 +45,10 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test do
+  gem 'poltergeist'
+end
+
 gem 'coveralls', require: false
 gem 'rspec-rails', group: [:development, :test]
 gem 'capybara', group: [:development, :test]
