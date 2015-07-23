@@ -18,13 +18,13 @@ feature 'user signs in', %{
 
     visit feelings_path
 
-    expect(page).to have_content('Unhappiness categories')
-    expect(page).to have_content('Personal life')
-    expect(page).to have_content('Social life')
-    expect(page).to have_content('Physical life')
-    expect(page).to have_content('Mental life')
-    expect(page).to have_content('Family life')
-    expect(page).to have_content('Financial life')
-    expect(page).to have_content('Spiritual life')
+    expect(page).to have_content("Unhappiness categories")
+    expect(page).to have_content("Personal life")
+    expect(page).to have_content("Social life")
+    expect(page).to have_content("Physical life")
+    expect(page).to have_content("Mental life")
+    expect(page).to have_content("Family life")
+    expect(page).to have_content("Financial life")
+    expect(page).to have_content("Spiritual life")
   end
 end

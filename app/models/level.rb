@@ -4,7 +4,7 @@ class Level < ActiveRecord::Base
 
   validates :amount, presence: true
 
-  def categories(level)
+  def categories
     @all_levels.each do
     end
   end
