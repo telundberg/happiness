@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   root 'feelings#index'
   devise_for :users
 
-  resources :feelings do
-    resources :levels
+  resources :feelings, only: [:index, :show] do
+    resources :levels, only: [:index, :show, :new, :create]
   end
 
   # resources :feelings

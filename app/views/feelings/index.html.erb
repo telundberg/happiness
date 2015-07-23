@@ -1,5 +1,5 @@
 <div class="feelings_index">
-  <h4>Unhappiness categories</h4>
+  <h4>Unhappiness Categories</h4>
 
     <div class="row">
       <div id="category_list" class="medium-12 medium-centered columns">
@@ -7,9 +7,13 @@
             <div class="categories_result"><%= link_to feeling.category, feeling_path(feeling) %></div>
             <!-- <div class="categories_result"><%= link_to feeling.category, new_feeling_level_path(feeling) %></div> -->
           <% end %>
+          <br>
+          <h4>Submissions per Day</h4>
           <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
           <!-- <%= javascript_include_tag "app/assets/javascripts/highcharts.js", "chartkick" %> -->
           <%= javascript_include_tag "application", "drawChart" %>
+          <%= bar_chart @all_levels.group_by_day(:created_at).count %>
+
       </div>
     </div>
   <br>

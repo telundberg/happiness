@@ -3,4 +3,9 @@ class Level < ActiveRecord::Base
   # has_many :feelings
 
   validates :amount, presence: true
+
+  def categories(level)
+    @all_levels.each do
+    end
+  end
 end
