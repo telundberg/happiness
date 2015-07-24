@@ -11,7 +11,7 @@
           <h4>Submissions per Day</h4>
           <%= javascript_include_tag :application, :drawChart %>
           <%= bar_chart @all_levels.group_by_day(:created_at).count %>
-
+          
       </div>
     </div>
   <br>
