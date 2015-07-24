@@ -17,14 +17,14 @@
             </ul>
           <%end%>
         </div>
-
-        <%= f.label :amount%>
-        <%= f.select :amount, options_for_select(10.downto(1)), id: " "%>
-        <%= f.submit "Add amount", class: "button radius small"%>
+        <div class="form">
+          <%= f.label :amount%>
+          <%= f.select :amount, options_for_select(10.downto(1)), id: " "%>
+          <%= f.submit "Add amount", class: "button radius small"%>
+        </div>
       <%end%>
-    </button>
-      <!-- <button id="popup" onclick="div_show()">Popup</button> -->
-
-    <%= link_to "Back to Index", feelings_path, class: "button radius small"%>
+  </button>
+  
+  <%= link_to "Back to Index", feelings_path, class: "button radius small"%>
   </div>
 </div>

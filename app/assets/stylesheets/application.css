@@ -20,9 +20,19 @@
   font-family: 'Growl'; /*a name to be used later*/
   src: url('growl.ttf') format('truetype'); /*URL to font*/
  }
+/* @import url('growl.ttf');s */
 
 #category_list {
   text-align: center;
+}
+
+#popup {
+  text-align: center;
+  padding-right: 80px;
+}
+
+.new_level {
+  margin-left: 60px;
 }
 
 .feelings_chart {
