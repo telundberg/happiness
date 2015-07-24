@@ -1,31 +1,14 @@
-<!-- <div id="slider"> -->
   <div class="feelings_details">
 
     <table>
       <h3>Unhappiness Levels for <%= @feeling.category %></h3>
-      <!-- <tr>
-        <th>Level</th>
-        <th>Created At</th>
-      </tr>
-        <% @levels.each do |level| %>
-        <tr>
-        <td><%= level.amount %></td>
-        <td><%= level.created_at %></td>
-        </tr>
-        </table>
-      <% end %> -->
       <div id="feelings_chart">
-        <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
-        <!-- <%= javascript_include_tag "app/assets/javascripts/highcharts.js", "chartkick" %> -->
-        <%= javascript_include_tag "application", "chartkick" %>
+        <%= javascript_include_tag :application, :drawChart %>
         <%= pie_chart @levels.group(:amount).count %>
-
-
-        <!-- <%= line_chart @levels.group_by_day(:created_at).count %> -->
-          <!-- <% content_for :level do %>
-          <%= javascript_include_tag 'application' %> -->
-          <!-- <% end %> -->
+        <% if @levels.empty? %>
+          <h4>Make sure to add a level!<h4>
+        <% end %>
       </div>
     <%= link_to "New Level", new_feeling_level_path(@feeling) %>
+    
   </div>
-<!-- </div> -->
