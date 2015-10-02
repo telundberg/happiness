@@ -5,9 +5,9 @@
       <div id="feelings_chart">
         <%= javascript_include_tag :application, :drawChart %>
         <%= pie_chart @levels.group(:amount).count %>
-        <% if @levels.empty? %>
-          <h4>Make sure to add a level!<h4>
-        <% end %>
+        <!-- <% if @levels.empty? %>
+          <%= flash[:notice] = "add a new level!" %>
+        <% end %> -->
       </div>
     <%= link_to "New Level", new_feeling_level_path(@feeling) %>
 

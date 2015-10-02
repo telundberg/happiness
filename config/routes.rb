@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  root 'feelings#index'
+  get 'auth/:provider/callback', to: 'feelings#index'
+  # match 'auth/failure', to: redirect('/')
+  get 'logout', to: 'feelings#index', as: 'logout'
+
   devise_for :users
 
   resources :feelings, only: [:index, :show] do
     resources :levels, only: [:index, :show, :new, :create]
   end
+
+  root 'feelings#index'
 
   # resources :feelings
   #

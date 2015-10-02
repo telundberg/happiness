@@ -20,13 +20,13 @@
 
 $(function(){ $(document).foundation(); });
 
-$(function() {
-  $('#sliderId').ramblingSlider();
-});
+function say_hello() {
+  document.print("Hello there");
+}
 
 //Function To Display Popup
 function div_show() {
-document.getElementById('abc').style.display = "block";
+  document.getElementById('abc').style.display = "block";
 }
 
 function facebook_login() {
