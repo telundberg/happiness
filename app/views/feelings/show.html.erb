@@ -1,7 +1,7 @@
   <div class="feelings_details">
 
     <table>
-      <h3>Unhappiness Levels for <%= @feeling.category %></h3>
+      <h3>Happiness Levels for <%= @feeling.category %></h3>
       <div id="feelings_chart">
         <%= javascript_include_tag :application, :drawChart %>
         <%= pie_chart @levels.group(:amount).count %>
